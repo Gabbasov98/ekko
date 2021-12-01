@@ -361,6 +361,10 @@
         align-items: center;
         justify-content: space-between;
     }
+    &__center {
+        display: flex;
+        align-items: center;
+    }
 }
 
 .header-bottom {
@@ -385,6 +389,7 @@
 .nav {
     display: flex;
     align-items: center;
+    margin-right: 50px;
     &__item {
         font-size: 16px;
         font-weight: 400;
@@ -438,5 +443,23 @@
                 width: 199px;
             }
         }
+    }
+}
+
+@media screen and (max-width: 1240px) {
+    .header {
+        &__logo {
+            width: 191px;
+        }
+        &__lang {
+            width: 34px;
+            height: 34px;
+            img {
+                width: 14px;
+            }
+        }
+    }
+    .nav {
+        margin-right: 20px;
     }
 }
