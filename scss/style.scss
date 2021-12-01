@@ -1,0 +1,33 @@
+@import 'reset';
+@import 'ux';
+@import 'header';
+@import '404';
+@import 'about';
+@import 'index';
+@import 'footer';
+@import 'popups';
+@import 'info';
+.wrapper {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1240px) {
+    .container {
+        width: 1200px;
+    }
+}
+
+.content {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+}
