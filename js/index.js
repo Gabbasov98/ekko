@@ -1,26 +1,59 @@
-function sliderMain() {
-    var swiper = new Swiper('.main .swiper-container', {
-        slidesPerView: 'auto',
-        spaceBetween: 0,
-        effect: 'fade',
-        speed: 1500,
+function sliderCatalog() {
+    var swiper = new Swiper('.collection__slider--green .swiper-container', {
+        spaceBetween: 6,
         navigation: {
-            nextEl: '.main .swiper-button-next',
-            prevEl: '.main .swiper-button-prev',
+            nextEl: '.collection__slider--green .swiper-button-next',
+            prevEl: '.collection__slider--green .swiper-button-prev',
         },
         pagination: {
-            el: '.main .swiper-pagination',
+            el: '.collection__slider--green .swiper-pagination',
             type: 'bullets',
             clickable: true,
         },
         breakpoints: {
             320: {
-                slidesPerView: 1,
-                spaceBetween: 0
+                slidesPerView: 2,
+                spaceBetween: 6
             },
-            480: {
-                slidesPerView: 1,
-                spaceBetween: 0
+            560: {
+                slidesPerView: 3,
+            },
+            992: {
+                slidesPerView: 4,
+            },
+            1240: {
+                slidesPerView: 5,
+            },
+
+        }
+    })
+}
+
+function sliderCatalog2() {
+    var swiper = new Swiper('.collection__slider--brown .swiper-container', {
+        spaceBetween: 6,
+        navigation: {
+            nextEl: '.collection__slider--brown .swiper-button-next',
+            prevEl: '.collection__slider--brown .swiper-button-prev',
+        },
+        pagination: {
+            el: '.collection__slider--brown .swiper-pagination',
+            type: 'bullets',
+            clickable: true,
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 2,
+                spaceBetween: 6
+            },
+            560: {
+                slidesPerView: 3,
+            },
+            992: {
+                slidesPerView: 4,
+            },
+            1240: {
+                slidesPerView: 5,
             },
 
         }
@@ -32,20 +65,37 @@ function sliderMain() {
 
 $(document).ready(function() {
     cartCalc()
-    sliderMain()
+    sliderCatalog()
+    sliderCatalog2()
+
     $('input[type="tel"]').mask('+7 (999) 999-9999', { placeholder: '+7 (       )         -' });
 
 
 
     $(".nav__item").hover(onIn, onOut);
+    $(".nav__item-show").click(function() {
+        if ($(this).hasClass("nav__item-show--active")) {
+            $(".nav__item-show").removeClass("nav__item-show--active")
+        } else {
+            $(".nav__item-show").removeClass("nav__item-show--active")
+            $(this).addClass("nav__item-show--active")
+        }
+
+    })
 
 
     $(".header__search-select-show").click(function() {
         $(this).addClass("header__search-select-show--active")
-        $(".header__search-select-hidden").slideDown()
+        $(this).siblings(".header__search-select-hidden").slideDown()
     })
 
     $(".header__catalog-item").hover(onIn2, onOut2);
+    $(".header__catalog-item-show").click(function() {
+        if (window.innerWidth < 992) {
+            $(this).toggleClass("header__catalog-item-show--active")
+        }
+    })
+
 
     $(".header__catalog-show").click(function() {
         if ($(this).parents(".header__catalog").hasClass("header__catalog--active")) {
@@ -78,8 +128,42 @@ $(document).ready(function() {
         }
     });
 
+    $(".header__burger").click(function() {
+        $(this).toggleClass("header__burger--active")
+        $("body").toggleClass("fixed-body")
+        $(".header-top__center").slideToggle()
+    })
+
+    $(".header__lang--active").click(function() {
+        $(this).parents(".header__langs").addClass("header__langs--active")
+    })
+
+    $(document).mouseup(function(e) { // событие клика по веб-документу
+        var div = $(".header__langs");
+        if (!div.is(e.target) // если клик был не по нашему блоку
+            &&
+            div.has(e.target).length === 0) { // и не по его дочерним элементам
+            // div.hide()
+            if ($(".header__langs").hasClass("header__langs--active")) {
+                $(".header__langs").removeClass("header__langs--active")
+            }
+        }
+    });
 
 
+    $(".collection__tab").click(function() {
+        let path = $(this).attr("data-tabs-path")
+        console.log(path)
+        $(".collection__tab").removeClass("collection__title--active")
+        $(`.collection__tab[data-tabs-path="${path}"]`).addClass("collection__title--active")
+        $(".collection__content").removeClass("collection__content--active")
+        $(`.collection__content[data-content-path="${path}"]`).addClass("collection__content--active")
+            // sliderCatalog()
+        if (path == 2) {
+            sliderCatalog2()
+        }
+
+    })
 
 })
 
