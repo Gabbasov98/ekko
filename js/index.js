@@ -79,7 +79,14 @@ $(document).ready(function() {
     });
 
 
-
+    $(".questions__item-show").click(function() {
+        if ($(this).parents(".questions__item").hasClass("questions__item--active")) {
+            $(this).parents(".questions__item").removeClass("questions__item--active")
+        } else {
+            $(".questions__item-show").parents(".questions__item").removeClass("questions__item--active")
+            $(this).parents(".questions__item").addClass("questions__item--active")
+        }
+    })
 
 })
 
