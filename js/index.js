@@ -163,35 +163,43 @@ $(document).ready(function() {
             sliderCatalog2()
         }
 
+        $(".questions__item-show").click(function() {
+            if ($(this).parents(".questions__item").hasClass("questions__item--active")) {
+                $(this).parents(".questions__item").removeClass("questions__item--active")
+            } else {
+                $(".questions__item-show").parents(".questions__item").removeClass("questions__item--active")
+                $(this).parents(".questions__item").addClass("questions__item--active")
+            }
+        })
+
     })
 
-})
-
-function clickOutsideElemnt(div, e) {
-    if (!div.is(e.target) &&
-        div.has(e.target).length === 0) {
-        div.hide();
-    }
-}
-
-function cartCalc() {
-    $('.ccalc .ccalc-minus').click(function() {
-        let a = $(this).closest('.ccalc').find('input').val();
-        if (a > 1) {
-            let b = +a - 1;
-            $(this).closest('.ccalc').find('input').val(b);
-        } else {
-            $(this).closest('.ccalc').find('input').val(a);
-            $(this).addClass("disabled");
+    function clickOutsideElemnt(div, e) {
+        if (!div.is(e.target) &&
+            div.has(e.target).length === 0) {
+            div.hide();
         }
-    });
-    $('.ccalc .ccalc-plus').click(function() {
-        let a = $(this).closest('.ccalc').find('input').val();
-        let b = +a + 1;
-        $(this).closest('.ccalc').find('input').val(b);
-        $(this).siblings(".ccalc-minus").removeClass("disabled");
-    });
-}
+    }
+
+    function cartCalc() {
+        $('.ccalc .ccalc-minus').click(function() {
+            let a = $(this).closest('.ccalc').find('input').val();
+            if (a > 1) {
+                let b = +a - 1;
+                $(this).closest('.ccalc').find('input').val(b);
+            } else {
+                $(this).closest('.ccalc').find('input').val(a);
+                $(this).addClass("disabled");
+            }
+        });
+        $('.ccalc .ccalc-plus').click(function() {
+            let a = $(this).closest('.ccalc').find('input').val();
+            let b = +a + 1;
+            $(this).closest('.ccalc').find('input').val(b);
+            $(this).siblings(".ccalc-minus").removeClass("disabled");
+        });
+    }
+})
 
 
 function onIn() {
