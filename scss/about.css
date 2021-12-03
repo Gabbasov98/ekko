@@ -1,148 +1,310 @@
 .company {
   border-top: 1px solid #f7f5f0;
-  margin-top: 50px;
-  padding-top: 50px;
-}
-.company__inner {
-  display: flex;
-  margin-bottom: 35px;
-}
-.company__left {
-  margin-right: 65px;
-}
-.company__right p {
-  margin-bottom: 28px;
-}
-.company__title {
-  margin-bottom: 32px;
-  font-size: 26px;
-  line-height: 31px;
-  font-weight: 500;
-  color: #202020;
-}
-.company__button {
-  display: flex;
-  flex-wrap: wrap;
-}
-.company__socials {
-  display: flex;
-  align-items: center;
-  margin-top: 34px;
-}
-.company__socials-title {
-  font-size: 14px;
-  line-height: 34px;
-  font-weight: 500;
-  letter-spacing: 0.04em;
-  color: #2d2d2d;
-  margin-right: 29px;
-}
-.company__socials-title:hover {
-  color: #85ab45;
-  cursor: pointer;
-}
-.company__socials-link {
-  display: flex;
-}
-.company__socials-item {
-  display: flex;
-  align-items: center;
-}
-.company__socials-item span {
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 400;
-  color: #000000;
-  margin-left: 14px;
-}
-.company__socials-item span:hover {
-  color: #85ab45;
-}
-.company__socials-item path {
-  fill: #9ac354;
-}
-.company__socials-item:not(:last-child) {
-  margin-right: 19px;
-}
-.company__gallery {
-  display: flex;
-  justify-content: center;
-  margin-top: 35px;
-}
-.company__gallery a:not(:last-child) {
-  margin-right: 6px;
-}
-.company__gallery a {
-  width: 200px;
-  height: 200px;
-}
-.company__gallery a img {
-  width: 100%;
-  height: 100%;
-}
+  margin-top: 10px;
+  padding: 45px 0 45px; }
+  .company__inner {
+    display: flex;
+    margin-bottom: 35px; }
+  .company__left {
+    margin-right: 65px;
+    width: 470px;
+    flex-shrink: 0; }
+    .company__left img {
+      width: 100%; }
+  .company__right {
+    padding-top: 5px; }
+    .company__right p {
+      margin-bottom: 20px; }
+  .company__title {
+    margin-bottom: 25px;
+    font-size: 26px;
+    line-height: 31px;
+    font-weight: 500;
+    color: #202020; }
+  .company__button {
+    display: flex;
+    flex-wrap: wrap; }
+  .company__socials {
+    display: flex;
+    align-items: center;
+    margin-top: 34px; }
+    .company__socials-title {
+      font-size: 14px;
+      line-height: 34px;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      color: #2d2d2d;
+      margin-right: 29px; }
+    .company__socials-link {
+      display: flex; }
+    .company__socials-item {
+      display: flex;
+      align-items: center; }
+      .company__socials-item span {
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 400;
+        color: #000000;
+        margin-left: 14px; }
+        .company__socials-item span:hover {
+          color: #85ab45; }
+      .company__socials-item path {
+        fill: #9ac354; }
+    .company__socials-item:not(:last-child) {
+      margin-right: 19px; }
+  .company__gallery {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px; }
+    .company__gallery-hint {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      font-weight: 400;
+      color: #696969;
+      margin-top: 25px; }
+      .company__gallery-hint svg {
+        margin-right: 14px; }
+    .company__gallery a:not(:last-child) {
+      margin-right: 6px; }
+    .company__gallery a {
+      width: 200px;
+      height: 200px;
+      position: relative;
+      opacity: 0.8; }
+      .company__gallery a:hover {
+        opacity: 1; }
+      .company__gallery a img {
+        width: 100%;
+        height: 100%; }
+
+.advantages__items--about {
+  padding-left: 0 !important;
+  padding-right: 0 !important; }
+
+.contact-us {
+  padding: 40px 0 60px;
+  background-color: #43985a;
+  position: relative; }
+  .contact-us:before, .contact-us:after {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 15px;
+    right: 0;
+    top: 0;
+    background-image: url(../images/wave1.png);
+    background-size: 100% 100%;
+    pointer-events: none; }
+  .contact-us:after {
+    top: unset;
+    bottom: 0;
+    background-image: url(../images/wave3.png); }
+  .contact-us__bg {
+    position: absolute;
+    height: 100%;
+    width: auto;
+    top: 0;
+    right: 0;
+    opacity: 0.8; }
+  .contact-us__title {
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+    position: relative; }
+    .contact-us__title:before {
+      content: '';
+      position: absolute;
+      z-index: 1;
+      width: 100%;
+      height: 1px;
+      background-color: #60ad75;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%); }
+    .contact-us__title span {
+      position: relative;
+      z-index: 2;
+      background-color: #43985a;
+      padding-right: 45px; }
+  .contact-us__inner {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+    position: relative;
+    z-index: 3; }
+  .contact-us__item {
+    margin-right: 20px; }
+    .contact-us__item-title {
+      font-size: 12px;
+      font-weight: 400;
+      color: #ffffff;
+      margin-bottom: 15px;
+      padding-left: 30px; }
+    .contact-us__item-address, .contact-us__item-mail, .contact-us__item-phone {
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      font-weight: 400;
+      color: #ffffff; }
+      .contact-us__item-address i, .contact-us__item-mail i, .contact-us__item-phone i {
+        width: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 15px;
+        flex-shrink: 0; }
+    .contact-us__item-mail:hover, .contact-us__item-phone:hover {
+      color: #ccf18e; }
+      .contact-us__item-mail:hover path, .contact-us__item-phone:hover path {
+        fill: #ccf18e; }
+    .contact-us__item-phone {
+      font-size: 18px; }
+    .contact-us__item-whatsapp {
+      padding-left: 30px;
+      margin-top: 10px;
+      display: flex;
+      align-items: flex-end;
+      font-size: 18px;
+      font-weight: 500;
+      color: #ffffff;
+      flex-wrap: wrap; }
+      .contact-us__item-whatsapp span {
+        font-size: 12px;
+        font-weight: 400;
+        color: #c7ead1;
+        margin-bottom: 5px; }
+      .contact-us__item-whatsapp a {
+        margin-right: 16px;
+        margin-bottom: 5px; }
+        .contact-us__item-whatsapp a:hover {
+          color: #ccf18e; }
+  .contact-us__socials {
+    display: flex;
+    align-items: center; }
+    .contact-us__socials-item {
+      width: 48px;
+      height: 48px;
+      background-color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%; }
+      .contact-us__socials-item:hover {
+        background-color: #207438; }
+        .contact-us__socials-item:hover path,
+        .contact-us__socials-item:hover circle {
+          fill: #fff; }
+      .contact-us__socials-item:not(:last-child) {
+        margin-right: 11px; }
 
 @media screen and (max-width: 1200px) {
   .company__gallery {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 6px;
-  }
-  .company__gallery a {
-    width: 100%;
-    height: 100%;
-  }
-}
+    padding: 0 3px; }
+    .company__gallery a {
+      width: 100%;
+      height: 100%; } }
 @media screen and (max-width: 992px) {
-  .company__inner {
-    display: block;
-  }
-  .company__left {
-    width: 100%;
-    margin-right: 0;
-  }
-  .company__left img {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 768px) {
   .company {
-    margin-top: 22px;
-    padding-top: 16px;
-  }
-  .company__inner {
-    margin-bottom: 24px;
-  }
-  .company__left {
-    margin-bottom: 22px;
-  }
-  .company__right p {
-    margin-bottom: 24px;
-  }
-  .company__title {
-    font-size: 18px;
-    line-height: 22px;
-    margin-bottom: 20px;
-  }
-  .company__socials {
-    margin-top: 24px;
-    display: block;
-  }
-  .company__socials-item svg {
-    width: 17px;
-    height: 17px;
-  }
-  .company__socials-item svg span {
-    font-size: 12px;
-  }
+    margin-top: 0px;
+    padding: 15px 0 30px; }
+    .company__inner {
+      margin-bottom: 24px;
+      display: block; }
+    .company__left {
+      margin-bottom: 22px;
+      width: 100%;
+      margin-right: 0; }
+      .company__left img {
+        width: 100%; }
+    .company__right p {
+      margin-bottom: 15px; }
+    .company__title {
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 20px; }
+    .company__socials {
+      margin-top: 24px;
+      display: block; }
+      .company__socials-item svg {
+        width: 17px;
+        height: 17px; }
+        .company__socials-item svg span {
+          font-size: 12px; }
 
+  .contact-us {
+    padding: 40px 0 45px; }
+    .contact-us:before, .contact-us:after {
+      height: 9px;
+      width: 990px; }
+    .contact-us__bg {
+      display: none; }
+    .contact-us__title {
+      font-size: 16px; }
+      .contact-us__title span {
+        padding-right: 17px; }
+    .contact-us__inner {
+      display: block;
+      margin-top: 0;
+      position: relative; }
+    .contact-us__socials {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0; }
+      .contact-us__socials-item {
+        margin-right: 0 !important;
+        margin-bottom: 10px;
+        width: 40px;
+        height: 40px; }
+        .contact-us__socials-item svg {
+          height: 16px;
+          width: auto; }
+    .contact-us__item {
+      margin-right: 0;
+      margin-top: 20px; }
+      .contact-us__item-title {
+        font-size: 10px;
+        margin-bottom: 7px;
+        padding-left: 23px; }
+      .contact-us__item-address, .contact-us__item-mail, .contact-us__item-phone {
+        padding-right: 48px;
+        font-size: 14px;
+        align-items: flex-start;
+        line-height: 20px; }
+        .contact-us__item-address i, .contact-us__item-mail i, .contact-us__item-phone i {
+          width: 12px;
+          margin-right: 10px; }
+        .contact-us__item-address svg, .contact-us__item-mail svg, .contact-us__item-phone svg {
+          height: 11px;
+          width: auto; }
+      .contact-us__item-phone {
+        font-size: 16px; }
+      .contact-us__item-whatsapp {
+        padding-left: 23px; }
+        .contact-us__item-whatsapp a {
+          font-size: 16px;
+          margin-right: 10px; }
+        .contact-us__item-whatsapp span {
+          font-size: 10px; }
+
+  .company__gallery-hint {
+    margin-top: 20px;
+    font-size: 9px; } }
+@media screen and (max-width: 768px) {
   .company__gallery {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 3px;
-    margin-top: 24px;
-  }
-  .company__gallery a {
-    width: 100%;
-    height: 100%;
-  }
-}
+    margin-top: 24px; }
+    .company__gallery a {
+      width: 100%;
+      height: 100%; } }
+
+/*# sourceMappingURL=about.css.map */

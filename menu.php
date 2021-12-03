@@ -46,46 +46,6 @@
 								</a>
 							</li>
 							<li>
-								<a href="cabinet.php" target="_blank">
-									cabinet
-								</a>
-							</li>
-							<li>
-								<a href="cabinet-bonus.php" target="_blank">
-									cabinet-bonus
-								</a>
-							</li>
-							<li>
-								<a href="cabinet-bonuscard-change.php" target="_blank">
-									cabinet-bonuscard-change
-								</a>
-							</li>
-							<li>
-								<a href="cabinet-bonuscard.php" target="_blank">
-									cabinet-bonuscard
-								</a>
-							</li>
-							<li>
-								<a href="cabinet-edit.php" target="_blank">
-									cabinet-edit
-								</a>
-							</li>
-							<li>
-								<a href="cabinet-order-info.php" target="_blank">
-									cabinet-order-info
-								</a>
-							</li>
-							<li>
-								<a href="cart.php" target="_blank">
-									cart
-								</a>
-							</li>
-							<li>
-								<a href="cart-empty.php" target="_blank">
-									cart-empty
-								</a>
-							</li>
-							<li>
 								<a href="catalog.php" target="_blank">
 									catalog
 								</a>
@@ -96,38 +56,38 @@
 								</a>
 							</li>
 							<li>
-								<a href="catalog-item-select.php" target="_blank">
-									catalog-item-select
+								<a href="catalog-raw-item.php" target="_blank">
+									catalog-raw-item
 								</a>
 							</li>
 							<li>
-								<a href="category.php" target="_blank">
-									category
+								<a href="catalog-list.php" target="_blank">
+									catalog-list
 								</a>
 							</li>
 							<li>
-								<a href="gallery.php" target="_blank">
-									gallery
+								<a href="catalog-raw-list.php" target="_blank">
+									catalog-raw-list
 								</a>
 							</li>
 							<li>
-								<a href="news.php" target="_blank">
-									news
+								<a href="catalog-raw-category.php" target="_blank">
+									catalog-raw-category
 								</a>
 							</li>
 							<li>
-								<a href="news-item.php" target="_blank">
-									news-item
+								<a href="catalog-category.php" target="_blank">
+									catalog-category
 								</a>
 							</li>
 							<li>
-								<a href="order.php" target="_blank">
-									order
+								<a href="contacts.php" target="_blank">
+									contacts
 								</a>
 							</li>
 							<li>
-								<a href="order-ok.php" target="_blank">
-									order-ok
+								<a href="info.php" target="_blank">
+									info
 								</a>
 							</li>
 							<li>
@@ -136,38 +96,8 @@
 								</a>
 							</li>
 							<li>
-								<a href="user-login.php" target="_blank">
-									user-login
-								</a>
-							</li>
-							<li>
-								<a href="user-registration.php" target="_blank">
-									user-registration
-								</a>
-							</li>
-							<li>
-								<a href="user-registration2.php" target="_blank">
-									user-registration2
-								</a>
-							</li>
-							<li>
-								<a href="user-registration3.php" target="_blank">
-									user-registration3
-								</a>
-							</li>
-							<li>
-								<a href="user-registration4.php" target="_blank">
-									user-registration4
-								</a>
-							</li>
-							<li>
-								<a href="user-registration5.php" target="_blank">
-									user-registration5
-								</a>
-							</li>
-							<li>
-								<a href="user-registration6.php" target="_blank">
-									user-registration6
+								<a href="textpage.php" target="_blank">
+									textpage
 								</a>
 							</li>
 							
@@ -176,13 +106,6 @@
 						<button style="border:1px solid black; margin-top: 20px; margin-left: 20px; width: 300px; height: 50px;" type="button" data-toggle="modal" data-target="#modal2">modal2</button>
 						<button style="border:1px solid black; margin-top: 20px; margin-left: 20px; width: 300px; height: 50px;" type="button" data-toggle="modal" data-target="#modal3">modal3</button>
 						<button style="border:1px solid black; margin-top: 20px; margin-left: 20px; width: 300px; height: 50px;" type="button" data-toggle="modal" data-target="#modal4">modal4</button>
-						<button style="border:1px solid black; margin-top: 20px; margin-left: 20px; width: 300px; height: 50px;" type="button" data-toggle="modal" data-target="#modal5">modal5</button>
-						<button style="border:1px solid black; margin-top: 20px; margin-left: 20px; width: 300px; height: 50px;" type="button" data-toggle="modal" data-target="#modal6">modal6</button>
-						<button style="border:1px solid black; margin-top: 20px; margin-left: 20px; width: 300px; height: 50px;" type="button" data-toggle="modal" data-target="#modal7">modal7</button>
-						<button style="border:1px solid black; margin-top: 20px; margin-left: 20px; width: 300px; height: 50px;" type="button" data-toggle="modal" data-target="#modal8">modal8</button>
-						<button style="border:1px solid black; margin-top: 20px; margin-left: 20px; width: 300px; height: 50px;" type="button" data-toggle="modal" data-target="#modal9">modal9</button>
-						<button style="border:1px solid black; margin-top: 20px; margin-left: 20px; width: 300px; height: 50px;" type="button" data-toggle="modal" data-target="#modal10">modal10</button>
-						<button style="border:1px solid black; margin-top: 20px; margin-bottom: 20px; margin-left: 20px; width: 300px; height: 50px;" type="button" data-toggle="modal" data-target="#modal11">modal11</button>
 
 						
 					</div></div>
