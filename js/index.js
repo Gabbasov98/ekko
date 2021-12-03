@@ -1,3 +1,29 @@
+function sliderMain() {
+    var swiper = new Swiper('.main .swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        navigation: {
+            nextEl: ' .main .swiper-button-next',
+            prevEl: ' .main .swiper-button-prev',
+        },
+        pagination: {
+            el: '.main .swiper-pagination',
+            type: 'bullets',
+            clickable: true,
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 20
+            },
+            480: {
+                slidesPerView: 1,
+                spaceBetween: 30
+            },
+        }
+    })
+}
+
 function sliderCatalog() {
     var swiper = new Swiper('.collection__slider--green .swiper-container', {
         spaceBetween: 6,
@@ -61,14 +87,36 @@ function sliderCatalog2() {
 }
 
 
+function gallery() {
+    var swiper = new Swiper(".catalog-item .mySwiper", {
+        spaceBetween: 10,
+        slidesPerView: "5",
+        freeMode: true,
+        watchSlidesProgress: true,
+    });
+    var swiper2 = new Swiper(".catalog-item .mySwiper2", {
+        spaceBetween: 10,
+        navigation: {
+            nextEl: ".catalog-item .swiper-button-next",
+            prevEl: ".catalog-item .swiper-button-prev",
+        },
+        thumbs: {
+            swiper: swiper,
+        },
+    });
+}
+
+
 
 
 $(document).ready(function() {
     cartCalc()
+    sliderMain()
     sliderCatalog()
     sliderCatalog2()
+    gallery()
 
-    $('input[type="tel"]').mask('+7 (999) 999-9999', { placeholder: '+7 (       )         -' });
+    $('input[type="tel"]').mask('+7 (999) 999-9999', { placeholder: '+7 (   )    -    ' });
 
 
 
@@ -162,45 +210,51 @@ $(document).ready(function() {
         if (path == 2) {
             sliderCatalog2()
         }
-
-        $(".questions__item-show").click(function() {
-            if ($(this).parents(".questions__item").hasClass("questions__item--active")) {
-                $(this).parents(".questions__item").removeClass("questions__item--active")
-            } else {
-                $(".questions__item-show").parents(".questions__item").removeClass("questions__item--active")
-                $(this).parents(".questions__item").addClass("questions__item--active")
-            }
-        })
-
+    })
+    $(".questions__item-show").click(function() {
+        if ($(this).parents(".questions__item").hasClass("questions__item--active")) {
+            $(this).parents(".questions__item").removeClass("questions__item--active")
+        } else {
+            $(".questions__item-show").parents(".questions__item").removeClass("questions__item--active")
+            $(this).parents(".questions__item").addClass("questions__item--active")
+        }
     })
 
-    function clickOutsideElemnt(div, e) {
-        if (!div.is(e.target) &&
-            div.has(e.target).length === 0) {
-            div.hide();
-        }
-    }
+    $(".catalog__filter-item-show").click(function() {
+        $(this).toggleClass("catalog__filter-item-show--active")
+    })
 
-    function cartCalc() {
-        $('.ccalc .ccalc-minus').click(function() {
-            let a = $(this).closest('.ccalc').find('input').val();
-            if (a > 1) {
-                let b = +a - 1;
-                $(this).closest('.ccalc').find('input').val(b);
-            } else {
-                $(this).closest('.ccalc').find('input').val(a);
-                $(this).addClass("disabled");
-            }
-        });
-        $('.ccalc .ccalc-plus').click(function() {
-            let a = $(this).closest('.ccalc').find('input').val();
-            let b = +a + 1;
-            $(this).closest('.ccalc').find('input').val(b);
-            $(this).siblings(".ccalc-minus").removeClass("disabled");
-        });
-    }
+    $(".catalog__filter-top").click(function() {
+        $(this).toggleClass("catalog__filter-top--active")
+    })
 })
 
+
+function clickOutsideElemnt(div, e) {
+    if (!div.is(e.target) &&
+        div.has(e.target).length === 0) {
+        div.hide();
+    }
+}
+
+function cartCalc() {
+    $('.ccalc .ccalc-minus').click(function() {
+        let a = $(this).closest('.ccalc').find('input').val();
+        if (a > 1) {
+            let b = +a - 1;
+            $(this).closest('.ccalc').find('input').val(b);
+        } else {
+            $(this).closest('.ccalc').find('input').val(a);
+            $(this).addClass("disabled");
+        }
+    });
+    $('.ccalc .ccalc-plus').click(function() {
+        let a = $(this).closest('.ccalc').find('input').val();
+        let b = +a + 1;
+        $(this).closest('.ccalc').find('input').val(b);
+        $(this).siblings(".ccalc-minus").removeClass("disabled");
+    });
+}
 
 function onIn() {
     if (window.innerWidth > 992) {

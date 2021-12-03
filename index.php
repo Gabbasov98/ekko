@@ -13,20 +13,52 @@
 			<?php include('header.php'); ?>
 
 			<section class='main'>
-				<img src="images/svg/promo-image.jpg" alt="" class="main__bg">
 				<div class='container'>
 					<div class='main__inner'>
-						<h2 class="main__title">Одноразовая ЭКО посуда и упаковка</h2>
-						<div class="main__subtitle">Высокое качество, стильный дизайн</div>
-						<div class="main__desc">Компания Ekko Hvoee осуществляет производство и продажу экологически чистой элитной одноразовой посуды оптом и в розницу.</div>
-						<button class="main__btn btn btn-green btn-rounded btn-link-to-page">
-							<span>ПЕРЕЙТИ В КАТАЛОГ</span>
-							<i>
-								<svg width="5" height="7" id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5.27 9.29">
-									<path fill="#4f924b" d="M295.41,416.76a.63.63,0,0,1,1.07-.45l4,4a.64.64,0,0,1,0,.89l-4,4a.63.63,0,0,1-1.07-.44Z" transform="translate(-295.41 -416.13)"></path>
-								</svg>
-							</i>
-						</button>
+						<div class="main__slider">
+							<div class='swiper-container'>
+								<div class='swiper-wrapper'>
+									<div class='swiper-slide'>
+										<div class="main__slider-item">
+											<h2 class="main__title">Одноразовая ЭКО посуда и упаковка</h2>
+											<div class="main__subtitle">Высокое качество, стильный дизайн</div>
+											<div class="main__desc">Компания Ekko Hvoee осуществляет производство и продажу экологически чистой элитной одноразовой посуды оптом и в розницу.</div>
+										</div>
+										<img src="images/svg/promo-image.jpg" alt="" class="main__bg">
+									</div>
+									<div class='swiper-slide'>
+										<div class="main__slider-item">
+											<h2 class="main__title">Одноразовая ЭКО посуда и упаковка</h2>
+											<div class="main__subtitle">Высокое качество, стильный дизайн</div>
+											<div class="main__desc">Компания Ekko Hvoee осуществляет производство и продажу экологически чистой элитной одноразовой посуды оптом и в розницу.</div>
+										</div>
+										<img src="images/svg/promo-image.jpg" alt="" class="main__bg">
+									</div>
+									<div class='swiper-slide'>
+										<div class="main__slider-item">
+											<h2 class="main__title">Одноразовая ЭКО посуда и упаковка</h2>
+											<div class="main__subtitle">Высокое качество, стильный дизайн</div>
+											<div class="main__desc">Компания Ekko Hvoee осуществляет производство и продажу экологически чистой элитной одноразовой посуды оптом и в розницу.</div>
+										</div>
+										<img src="images/svg/promo-image.jpg" alt="" class="main__bg">
+									</div>
+								</div>
+							</div>
+							<div class="main__slider-pag">
+								<div class='swiper-button-prev btn btn-green main__slider-prev'>
+									<svg width="5" height="7" id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5.27 9.29">
+										<path fill="#fff" d="M300.68,424.8a.63.63,0,0,1-1.07.44l-4-4a.64.64,0,0,1,0-.89l4-4a.63.63,0,0,1,1.07.45Z" transform="translate(-295.41 -416.13)"></path>
+									</svg>
+								</div>
+								<div class='swiper-pagination'></div>
+								<div class='swiper-button-next btn btn-green main__slider-next'>
+									<svg width="5" height="7" id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5.27 9.29">
+										<path fill="#fff" d="M295.41,416.76a.63.63,0,0,1,1.07-.45l4,4a.64.64,0,0,1,0,.89l-4,4a.63.63,0,0,1-1.07-.44Z" transform="translate(-295.41 -416.13)"></path>
+									</svg>
+								</div>
+							</div>
+						</div>
+
 					</div>
 				</div>
 			</section>
@@ -108,7 +140,9 @@
 							<input type="text" placeholder="поиск по каталогу">
 							<button class="header__search-btn btn btn-dark-green btn-rounded icon-right">
 								<span>искать</span>
-								<svg width="5" height="8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="#fff" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
+								<svg width="5" height="8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+									<path fill="#fff" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path>
+								</svg>
 							</button>
 							<div class="header__search-select">
 								<div class="header__search-select-show">
@@ -165,7 +199,9 @@
 							</div>
 							<div class="catalog-prod__item-title">
 								<span>Бумажная продукция</span>
-								<svg width="5" height="9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="#fff" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
+								<svg width="5" height="9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+									<path fill="#fff" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path>
+								</svg>
 							</div>
 						</a>
 						<a href="" class="catalog-prod__item">
@@ -174,7 +210,9 @@
 							</div>
 							<div class="catalog-prod__item-title">
 								<span>Крахмал</span>
-								<svg width="5" height="9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="#fff" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
+								<svg width="5" height="9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+									<path fill="#fff" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path>
+								</svg>
 							</div>
 						</a>
 						<a href="" class="catalog-prod__item">
@@ -183,7 +221,9 @@
 							</div>
 							<div class="catalog-prod__item-title">
 								<span>Древесина</span>
-								<svg width="5" height="9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="#fff" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
+								<svg width="5" height="9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+									<path fill="#fff" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path>
+								</svg>
 							</div>
 						</a>
 					</div>
@@ -199,142 +239,153 @@
 								<div class="collection__title collection__title--prod collection__tab" data-tabs-path="2">ХИТЫ ПРОДАЖ</div>
 							</div>
 						</div>
-						<div class="collection__slider collection__slider--green collection__content collection__content--active" data-content-path="1">
-							<div class='swiper-container'>
-							   <div class='swiper-wrapper'>
-									<div class='swiper-slide'>
-										<div class="card">
-											<div class="card__img">
-												<img src="images/card1.jpg" alt="">
+						<div class="collection__content collection__content--active" data-content-path="1">
+							<div class="collection__slider collection__slider--green">
+								<div class='swiper-container'>
+									<div class='swiper-wrapper'>
+										<div class='swiper-slide'>
+											<div class="card">
+												<a href="" class="card__img">
+													<img src="images/card1.jpg" alt="">
+												</a>
+												<a href="" class="card__title">Тарелка одноразовая Albeta, 10 шт, Дерево</a>
+												<div class="card__num">236589511</div>
 											</div>
-											<div class="card__title">Ложка одноразовая деревянная - 10 шт</div>
-											<div class="card__num">21452145</div>
+										</div>
+										<div class='swiper-slide'>
+											<div class="card">
+												<a href="" class="card__img">
+													<img src="images/card2.jpg" alt="">
+												</a>
+												<a href="" class="card__title">Тарелка одноразовая Albeta, 10 шт, Дерево</a>
+												<div class="card__num">236589511</div>
+											</div>
+										</div>
+										<div class='swiper-slide'>
+											<div class="card">
+												<a href="" class="card__img">
+													<img src="images/card3.jpg" alt="">
+												</a>
+												<a href="" class="card__title">Вилка VIATTO WF-140, одноразовая, деревянная, 14 см, 100 шт.</a>
+												<div class="card__num">14221453</div>
+											</div>
+										</div>
+										<div class='swiper-slide'>
+											<div class="card">
+												<a href="" class="card__img">
+													<img src="images/card4.jpg" alt="">
+												</a>
+												<a href="" class="card__title">Стакан двухслойный бумажный 350 мл "Крафт", (30шт)</a>
+												<div class="card__num">144221444</div>
+											</div>
+										</div>
+										<div class='swiper-slide'>
+											<div class="card">
+												<a href="" class="card__img">
+													<img src="images/card5.jpg" alt="">
+												</a>
+												<a href="" class="card__title">Размешиватели для кофе, палочки деревянные, мешалки для горячих и холодных напитков text for testing ggtdfg</a>
+												<div class="card__num">125400021</div>
+											</div>
+										</div>
+										<div class='swiper-slide'>
+											<div class="card">
+												<a href="" class="card__img">
+													<img src="images/card1.jpg" alt="">
+												</a>
+												<a href="" class="card__title">Размешиватели для кофе, палочки деревянные, мешалки для горячих и холодных напитков text for testing ggtdfg</a>
+												<div class="card__num">125400021</div>
+											</div>
 										</div>
 									</div>
-									<div class='swiper-slide'>
-										<div class="card">
-											<a href="" class="card__img">
-												<img src="images/card2.jpg" alt="">
-											</a>
-											<a href="" class="card__title">Тарелка одноразовая Albeta, 10 шт, Дерево</a>
-											<div class="card__num">236589511</div>
-										</div>
-									</div>
-									<div class='swiper-slide'>
-										<div class="card">
-											<a href="" class="card__img">
-												<img src="images/card3.jpg" alt="">
-											</a>
-											<a href="" class="card__title">Вилка VIATTO WF-140, одноразовая, деревянная, 14 см, 100 шт.</a>
-											<div class="card__num">14221453</div>
-										</div>
-									</div>
-									<div class='swiper-slide'>
-										<div class="card">
-											<a href="" class="card__img">
-												<img src="images/card4.jpg" alt="">
-											</a>
-											<a href="" class="card__title">Стакан двухслойный бумажный 350 мл "Крафт", (30шт)</a>
-											<div class="card__num">144221444</div>
-										</div>
-									</div>
-									<div class='swiper-slide'>
-										<div class="card">
-											<a href="" class="card__img">
-												<img src="images/card5.jpg" alt="">
-											</a>
-											<a href="" class="card__title">Размешиватели для кофе, палочки деревянные, мешалки для горячих и холодных напитков text for testing ggtdfg</a>
-											<div class="card__num">125400021</div>
-										</div>
-									</div>
-									<div class='swiper-slide'>
-										<div class="card">
-											<a href="" class="card__img">
-												<img src="images/card1.jpg" alt="">
-											</a>
-											<a href="" class="card__title">Размешиватели для кофе, палочки деревянные, мешалки для горячих и холодных напитков text for testing ggtdfg</a>
-											<div class="card__num">125400021</div>
-										</div>
-									</div>
-							   </div>
-							</div>
-							<div class='swiper-pagination collection__slider-pagination'></div>
-							<div class="collection__slider-nav">
-								<div class='swiper-button-prev collection__slider-prev btn-green'>
-									<svg width="5" height="7" id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5.27 9.29"><path fill="#fff" d="M300.68,424.8a.63.63,0,0,1-1.07.44l-4-4a.64.64,0,0,1,0-.89l4-4a.63.63,0,0,1,1.07.45Z" transform="translate(-295.41 -416.13)"></path></svg>
 								</div>
-							   	<div class='swiper-button-next collection__slider-next btn-green'>
-								   <svg width="5" height="7" id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5.27 9.29"><path fill="#fff" d="M295.41,416.76a.63.63,0,0,1,1.07-.45l4,4a.64.64,0,0,1,0,.89l-4,4a.63.63,0,0,1-1.07-.44Z" transform="translate(-295.41 -416.13)"></path></svg>
+								<div class='swiper-pagination collection__slider-pagination'></div>
+								<div class="collection__slider-nav">
+									<div class='swiper-button-prev collection__slider-prev btn-green'>
+										<svg width="5" height="7" id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5.27 9.29">
+											<path fill="#fff" d="M300.68,424.8a.63.63,0,0,1-1.07.44l-4-4a.64.64,0,0,1,0-.89l4-4a.63.63,0,0,1,1.07.45Z" transform="translate(-295.41 -416.13)"></path>
+										</svg>
+									</div>
+									<div class='swiper-button-next collection__slider-next btn-green'>
+										<svg width="5" height="7" id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5.27 9.29">
+											<path fill="#fff" d="M295.41,416.76a.63.63,0,0,1,1.07-.45l4,4a.64.64,0,0,1,0,.89l-4,4a.63.63,0,0,1-1.07-.44Z" transform="translate(-295.41 -416.13)"></path>
+										</svg>
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="collection__slider collection__slider--brown collection__content"  data-content-path="2">
-							
-							<div class='swiper-container'>
-							   <div class='swiper-wrapper'>
-									<div class='swiper-slide'>
-										<div class="card card--prod">
-											<div class="card__img">
-												<img src="images/card1.jpg" alt="">
+						<div class="collection__content" data-content-path="2">
+							<div class="collection__slider collection__slider--brown">
+								<div class='swiper-container'>
+									<div class='swiper-wrapper'>
+										<div class='swiper-slide'>
+											<div class="card card--prod">
+												<div class="card__img">
+													<img src="images/card1.jpg" alt="">
+												</div>
+												<div class="card__title">Ложка одноразовая деревянная - 10 шт</div>
+												<div class="card__num">21452145</div>
 											</div>
-											<div class="card__title">Ложка одноразовая деревянная - 10 шт</div>
-											<div class="card__num">21452145</div>
+										</div>
+										<div class='swiper-slide'>
+											<div class="card card--prod">
+												<a href="" class="card__img">
+													<img src="images/card2.jpg" alt="">
+												</a>
+												<a href="" class="card__title">Тарелка одноразовая Albeta, 10 шт, Дерево</a>
+												<div class="card__num">236589511</div>
+											</div>
+										</div>
+										<div class='swiper-slide'>
+											<div class="card card--prod">
+												<a href="" class="card__img">
+													<img src="images/card3.jpg" alt="">
+												</a>
+												<a href="" class="card__title">Вилка VIATTO WF-140, одноразовая, деревянная, 14 см, 100 шт.</a>
+												<div class="card__num">14221453</div>
+											</div>
+										</div>
+										<div class='swiper-slide'>
+											<div class="card card--prod">
+												<a href="" class="card__img">
+													<img src="images/card4.jpg" alt="">
+												</a>
+												<a href="" class="card__title">Стакан двухслойный бумажный 350 мл "Крафт", (30шт)</a>
+												<div class="card__num">144221444</div>
+											</div>
+										</div>
+										<div class='swiper-slide'>
+											<div class="card card--prod">
+												<a href="" class="card__img">
+													<img src="images/card5.jpg" alt="">
+												</a>
+												<a href="" class="card__title">Размешиватели для кофе, палочки деревянные, мешалки для горячих и холодных напитков text for testing ggtdfg</a>
+												<div class="card__num">125400021</div>
+											</div>
+										</div>
+										<div class='swiper-slide'>
+											<div class="card card--prod">
+												<a href="" class="card__img">
+													<img src="images/card1.jpg" alt="">
+												</a>
+												<a href="" class="card__title">Размешиватели для кофе, палочки деревянные, мешалки для горячих и холодных напитков text for testing ggtdfg</a>
+												<div class="card__num">125400021</div>
+											</div>
 										</div>
 									</div>
-									<div class='swiper-slide'>
-										<div class="card card--prod">
-											<a href="" class="card__img">
-												<img src="images/card2.jpg" alt="">
-											</a>
-											<a href="" class="card__title">Тарелка одноразовая Albeta, 10 шт, Дерево</a>
-											<div class="card__num">236589511</div>
-										</div>
-									</div>
-									<div class='swiper-slide'>
-										<div class="card card--prod">
-											<a href="" class="card__img">
-												<img src="images/card3.jpg" alt="">
-											</a>
-											<a href="" class="card__title">Вилка VIATTO WF-140, одноразовая, деревянная, 14 см, 100 шт.</a>
-											<div class="card__num">14221453</div>
-										</div>
-									</div>
-									<div class='swiper-slide'>
-										<div class="card card--prod">
-											<a href="" class="card__img">
-												<img src="images/card4.jpg" alt="">
-											</a>
-											<a href="" class="card__title">Стакан двухслойный бумажный 350 мл "Крафт", (30шт)</a>
-											<div class="card__num">144221444</div>
-										</div>
-									</div>
-									<div class='swiper-slide'>
-										<div class="card card--prod">
-											<a href="" class="card__img">
-												<img src="images/card5.jpg" alt="">
-											</a>
-											<a href="" class="card__title">Размешиватели для кофе, палочки деревянные, мешалки для горячих и холодных напитков text for testing ggtdfg</a>
-											<div class="card__num">125400021</div>
-										</div>
-									</div>
-									<div class='swiper-slide'>
-										<div class="card card--prod">
-											<a href="" class="card__img">
-												<img src="images/card1.jpg" alt="">
-											</a>
-											<a href="" class="card__title">Размешиватели для кофе, палочки деревянные, мешалки для горячих и холодных напитков text for testing ggtdfg</a>
-											<div class="card__num">125400021</div>
-										</div>
-									</div>
-							   </div>
-							</div>
-							<div class='swiper-pagination collection__slider-pagination'></div>
-							<div class="collection__slider-nav">
-								<div class='swiper-button-prev collection__slider-prev btn-brown'>
-									<svg width="5" height="7" id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5.27 9.29"><path fill="#fff" d="M300.68,424.8a.63.63,0,0,1-1.07.44l-4-4a.64.64,0,0,1,0-.89l4-4a.63.63,0,0,1,1.07.45Z" transform="translate(-295.41 -416.13)"></path></svg>
 								</div>
-							   	<div class='swiper-button-next collection__slider-next btn-brown'>
-								   <svg width="5" height="7" id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5.27 9.29"><path fill="#fff" d="M295.41,416.76a.63.63,0,0,1,1.07-.45l4,4a.64.64,0,0,1,0,.89l-4,4a.63.63,0,0,1-1.07-.44Z" transform="translate(-295.41 -416.13)"></path></svg>
+								<div class='swiper-pagination collection__slider-pagination'></div>
+								<div class="collection__slider-nav">
+									<div class='swiper-button-prev collection__slider-prev btn-brown'>
+										<svg width="5" height="7" id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5.27 9.29">
+											<path fill="#fff" d="M300.68,424.8a.63.63,0,0,1-1.07.44l-4-4a.64.64,0,0,1,0-.89l4-4a.63.63,0,0,1,1.07.45Z" transform="translate(-295.41 -416.13)"></path>
+										</svg>
+									</div>
+									<div class='swiper-button-next collection__slider-next btn-brown'>
+										<svg width="5" height="7" id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5.27 9.29">
+											<path fill="#fff" d="M295.41,416.76a.63.63,0,0,1,1.07-.45l4,4a.64.64,0,0,1,0,.89l-4,4a.63.63,0,0,1-1.07-.44Z" transform="translate(-295.41 -416.13)"></path>
+										</svg>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -370,6 +421,97 @@
 									<span>КОНТАКТЫ</span>
 								</a>
 							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class='follow'>
+				<div class='container'>
+					<div class='follow__inner'>
+						<div class="follow__left">
+							<div class="follow__title">ПОДПИШИТЕСЬ</div>
+							<div class="follow__subtitle">на новости о наших скидках, акциях и новинках</div>
+						</div>
+						<div class="follow__right">
+							<form class="follow__form">
+								<div class="follow__form-group">
+									<input type="text" placeholder="Ваше имя">
+								</div>
+								<div class="follow__form-group">
+									<input type="email" placeholder="Электронная почта">
+								</div>
+								<button class="follow__form-btn btn-brown">ПОДПИСАТЬСЯ</button>
+							</form>
+							<a href="" class="follow__link">
+								<span>условия нашей рассылки</span>
+								<svg width="3" height="5" id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5.27 9.29">
+									<path fill="#b27544" d="M295.41,416.76a.63.63,0,0,1,1.07-.45l4,4a.64.64,0,0,1,0,.89l-4,4a.63.63,0,0,1-1.07-.44Z" transform="translate(-295.41 -416.13)"></path>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class='follow'>
+				<div class='container'>
+					<div class='follow__inner'>
+						<div class="follow__left">
+							<div class="follow__title">ПОДПИШИТЕСЬ</div>
+							<div class="follow__subtitle">на новости о наших скидках, акциях и новинках</div>
+						</div>
+						<div class="follow__right">
+							<form class="follow__form">
+								<div class="follow__form-group">
+									<input type="text" placeholder="Ваше имя">
+								</div>
+								<div class="follow__form-group">
+									<input class="input-error" value="abcd@yandex.ru" type="email" placeholder="Электронная почта">
+									<div class="follow__form-group-error">
+										<svg width="11" height="11" id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.97 10.97">
+											<path fill="#fff" d="M365,400.25h-.68l-.08,0a5.32,5.32,0,0,1-1.52-.34,5.49,5.49,0,1,1,7.32-6.26c0,.22.07.43.1.65v1c0,.24-.07.49-.12.72a5.48,5.48,0,0,1-4.4,4.18Zm-3.21-1.92a4.54,4.54,0,0,0,6.11-.32,4.6,4.6,0,0,0,.28-6.12Zm5.74-7.12a4.55,4.55,0,0,0-6.38,6.43Z" transform="translate(-359.19 -389.28)" />
+										</svg>
+										<span>Указанная эл.почта уже есть среди подписчиков</span>
+									</div>
+								</div>
+								<button class="follow__form-btn btn-brown">ПОДПИСАТЬСЯ</button>
+							</form>
+							<a href="" class="follow__link">
+								<span>условия нашей рассылки</span>
+								<svg width="3" height="5" id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5.27 9.29">
+									<path fill="#b27544" d="M295.41,416.76a.63.63,0,0,1,1.07-.45l4,4a.64.64,0,0,1,0,.89l-4,4a.63.63,0,0,1-1.07-.44Z" transform="translate(-295.41 -416.13)"></path>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class='follow'>
+				<div class='container'>
+					<div class='follow__inner'>
+						<div class="follow__left">
+							<div class="follow__title">ПОДПИШИТЕСЬ</div>
+							<div class="follow__subtitle">на новости о наших скидках, акциях и новинках</div>
+						</div>
+						<div class="follow__right">
+							<form class="follow__form">
+								<div class="follow__form-group">
+									<input type="text" placeholder="Ваше имя">
+								</div>
+								<div class="follow__form-group">
+									<input type="email" placeholder="Электронная почта">
+								</div>
+								<button class="follow__form-btn btn-brown">ПОДПИСАТЬСЯ</button>
+								<div class="follow__form-success">ПОДПИСКА НА РАССЫЛКУ УСПЕШНО ОФОРМЛЕНА</div>
+							</form>
+							<a href="" class="follow__link">
+								<span>условия нашей рассылки</span>
+								<svg width="3" height="5" id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5.27 9.29">
+									<path fill="#b27544" d="M295.41,416.76a.63.63,0,0,1,1.07-.45l4,4a.64.64,0,0,1,0,.89l-4,4a.63.63,0,0,1-1.07-.44Z" transform="translate(-295.41 -416.13)"></path>
+								</svg>
+							</a>
 						</div>
 					</div>
 				</div>
