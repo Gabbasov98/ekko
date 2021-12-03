@@ -20,7 +20,7 @@
 				color: #000000;
 				font-size: 14px;
 			}	/* background: #000; */
-			}
+			
 		</style>
 		
 		<div class="page_wrapper">

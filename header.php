@@ -2,7 +2,7 @@
     <section class='header-top'>
         <div class='container'>
             <div class='header-top__inner'>
-                <a href="" class="header__logo">
+                <a href="index.php" class="header__logo">
                     <img src="images/svg/logo.png" alt="">
                 </a>
                 <div class="header-top__center">

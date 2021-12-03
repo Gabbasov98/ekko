@@ -1,218 +1,271 @@
-.footer {
-  background-image: url(../images/footer_bg.png);
-  padding: 85px 0 35px;
-  background-size: 100% 100%;
-  margin-top: -45px;
-  position: relative;
-  z-index: 4; }
-  .footer__inner {
-    display: flex; }
+.footer__col {
+  width: 160px;
+  position: relative; }
   .footer__col:nth-child(1) {
-    width: 270px;
-    margin-right: 85px;
+    width: 505px;
     flex-shrink: 0; }
-  .footer__col:nth-child(2) {
-    flex-grow: 1; }
-  .footer__col:nth-child(3) {
-    width: 68px;
-    flex-shrink: 0;
-    margin-left: 100px; }
-    .footer__col:nth-child(3) img {
-      width: 100%; }
-  .footer__nav {
+.footer__head {
+  display: flex;
+  align-items: center;
+  padding-right: 58px; }
+.footer__logo {
+  width: 218px;
+  margin-right: 40px;
+  display: block;
+  flex-shrink: 0; }
+  .footer__logo img,
+  .footer__logo svg {
+    width: 100%; }
+.footer__langs {
+  display: flex; }
+.footer__lang {
+  width: 43px;
+  height: 43px;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .3s;
+  background-color: #85ab45;
+  border: 1px solid #a1bfa0; }
+  .footer__lang--active {
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    pointer-events: none; }
+  .footer__lang:hover {
+    border: 1px solid #ffffff;
+    cursor: pointer; }
+  .footer__lang:not(:last-child) {
+    margin-right: 5px; }
+  .footer__lang img {
+    width: 19px; }
+.footer__title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 12px; }
+.footer__link {
+  font-size: 13px;
+  line-height: 32px;
+  font-weight: 400;
+  color: #d0e1b3;
+  display: block; }
+  .footer__link:hover {
+    color: #ffffff; }
+.footer__info {
+  margin-top: 40px; }
+.footer__address, .footer__mail, .footer__phone {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+  margin-top: 20px; }
+  .footer__address:hover, .footer__mail:hover, .footer__phone:hover {
+    color: #ccf18e; }
+  .footer__address i, .footer__mail i, .footer__phone i {
+    margin-right: 15px;
+    width: 13px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 13px;
+    justify-content: center;
+    flex-shrink: 0; }
+.footer__address {
+  pointer-events: none;
+  padding-right: 58px; }
+.footer__phone {
+  margin-top: 0;
+  font-size: 16px;
+  font-weight: 500; }
+.footer__phones {
+  display: flex;
+  align-items: center;
+  margin-top: 20px; }
+.footer__whatsapp {
+  display: flex;
+  align-items: center;
+  margin-left: 16px;
+  color: #ffffff; }
+  .footer__whatsapp:hover {
+    color: #ccf18e; }
+  .footer__whatsapp strong {
+    margin: 0 15px;
     font-weight: 500;
-    color: #fffbf7; }
-  .footer__privacy {
-    font-size: 11px;
-    line-height: 16px;
-    font-weight: 400;
-    color: #d4beb1; }
-  .footer__politic {
-    font-size: 11px;
-    font-weight: 400;
-    color: #d3c4bb;
-    margin-top: 21px; }
-  .footer__contacts {
-    display: flex;
-    margin-top: 27px; }
-    .footer__contacts-left {
-      display: flex;
-      align-items: center;
-      margin-right: 35px;
-      height: 21px; }
-    .footer__contacts-right {
-      display: flex; }
-    .footer__contacts-phone {
-      display: flex;
-      align-items: center;
-      font-size: 16px;
-      font-weight: 500;
-      color: #ffffff;
-      margin-right: 25px; }
-      .footer__contacts-phone svg {
-        width: 12px;
-        margin-right: 15px; }
-      .footer__contacts-phone path {
-        fill: #c19d5f; }
-    .footer__contacts-whatsapp {
-      color: #ffffff;
-      margin-top: 15px;
-      display: flex;
-      align-items: center; }
-      .footer__contacts-whatsapp svg {
-        width: 13px;
-        margin-right: 14px; }
-      .footer__contacts-whatsapp path {
-        fill: #c19d5f; }
-      .footer__contacts-whatsapp span {
-        font-size: 14px;
-        font-weight: 500;
-        margin-right: 10px; }
-      .footer__contacts-whatsapp i {
-        font-size: 10px;
-        font-weight: 400; }
-    .footer__contacts-time {
-      font-size: 12px;
-      font-weight: 400;
-      color: #ffffff;
-      display: flex;
-      align-items: center;
-      height: 13px;
-      margin-left: 5px; }
-      .footer__contacts-time svg {
-        width: 13px;
-        margin-right: 11px; }
-      .footer__contacts-time path {
-        fill: #c19d5f; }
-  .footer__instagram {
-    margin-right: 31px; }
-    .footer__instagram:hover path {
-      fill: #c19d5f; }
-    .footer__instagram svg {
-      width: 21px; }
-    .footer__instagram path {
-      fill: #fff; }
-  .footer__address {
+    font-size: 16px; }
+  .footer__whatsapp span {
+    font-size: 12px;
+    color: #ddebc4; }
+  .footer__whatsapp i {
+    width: 3px;
+    height: 3px;
+    background-color: #9aca97;
+    display: block; }
+.footer__socials {
+  position: absolute;
+  right: 0;
+  top: 0; }
+  .footer__socials-item {
+    width: 48px;
+    height: 48px;
+    background-color: #678b2b;
+    border-radius: 50%;
     display: flex;
     align-items: center;
-    font-size: 14px;
-    font-weight: 400;
-    color: #fffbf7; }
-    .footer__address svg {
-      width: 12px;
-      margin-right: 14px; }
-    .footer__address path {
-      fill: #c19d5f; }
-    .footer__address i {
-      font-style: normal; }
-    .footer__address br {
-      display: none; }
-  .footer__ooo {
-    margin-top: 3px;
-    font-size: 10px;
-    font-weight: 400;
-    color: #aa988d; }
+    justify-content: center;
+    margin-bottom: 7px; }
+    .footer__socials-item:hover {
+      background-color: #466413; }
+.footer__privacy {
+  font-size: 12px;
+  font-weight: 400;
+  color: #c1d2a5; }
+.footer__by {
+  font-size: 10px;
+  font-weight: 400;
+  color: #c1d2a5;
+  margin-top: 10px; }
+  .footer__by a:hover {
+    color: #ffffff; }
 
-@media screen and (max-width: 1300px) {
+.footer-top {
+  background-color: #85ab45;
+  position: relative;
+  padding: 40px 0; }
+  .footer-top:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 15px;
+    right: 0;
+    bottom: 0;
+    background-image: url(../images/wave4.png);
+    background-size: 100% 100%;
+    pointer-events: none; }
+  .footer-top__inner {
+    display: flex;
+    justify-content: space-between; }
+
+.footer-bottom {
+  background-color: #678b2b;
+  padding: 25px 0; }
+  .footer-bottom__inner {
+    display: flex; }
+  .footer-bottom__info {
+    display: flex;
+    align-items: center; }
+  .footer-bottom__link {
+    font-size: 12px;
+    font-weight: 400;
+    color: #cbdeaa;
+    display: block; }
+    .footer-bottom__link:not(:last-child) {
+      margin-right: 25px; }
+    .footer-bottom__link:hover {
+      color: #ffffff; }
+
+@media screen and (max-width: 1240px) {
   .footer__col:nth-child(1) {
-    margin-right: 30px; }
-  .footer__col:nth-child(3) {
-    margin-left: 30px; } }
-@media screen and (max-width: 1200px) {
-  .footer__col:nth-child(1) {
-    margin-right: 20px;
-    width: 200px; }
-    .footer__col:nth-child(1) br {
-      display: none; }
-  .footer__col:nth-child(3) {
-    margin-left: 20px; }
-  .footer__instagram {
-    margin-right: 15px; }
-  .footer__contacts-left {
-    margin-right: 15px; } }
-@media screen and (max-width: 992px) {
-  .footer {
-    margin-top: -55px;
-    padding: 45px 0 20px;
-    background-size: 1400px 100%;
-    background-position: right top; }
-    .footer__nav {
-      display: none; }
-    .footer__col:nth-child(1) {
-      margin-right: 0;
-      width: 100%; }
-    .footer__col:nth-child(2) {
-      order: -1;
-      width: 100%; }
-    .footer__col:nth-child(3) {
-      margin-left: 0;
-      width: 100%; }
-      .footer__col:nth-child(3) img {
-        position: absolute;
-        right: 0;
-        bottom: 10px;
-        width: 60px; }
-    .footer__inner {
-      flex-wrap: wrap;
-      position: relative; }
-    .footer__contacts {
-      display: block; }
-      .footer__contacts-left {
-        margin-right: 0;
-        margin-bottom: 20px; }
-    .footer__privacy {
-      margin-top: 20px; }
-    .footer__politic {
-      margin-top: 10px; }
-    .footer__ooo {
-      margin-top: 15px; } }
-@media screen and (max-width: 768px) {
-  .footer {
-    background-size: 900px 100%; }
-    .footer__col:nth-child(1) {
-      width: 430px; }
-    .footer__col:nth-child(3) {
+    width: 350px; }
+  .footer__head {
+    display: block; }
+  .footer__logo {
+    margin-right: 0;
+    margin-bottom: 20px; }
+  .footer__address {
+    padding-right: 0; }
+  .footer__phones {
+    display: block; }
+  .footer__whatsapp {
+    margin-top: 20px;
+    margin-left: 28px; }
+    .footer__whatsapp strong {
       margin-left: 0; }
-      .footer__col:nth-child(3) img {
-        position: absolute;
-        right: 0;
-        bottom: 0px;
-        width: 60px; }
-    .footer__ooo {
-      width: 430px;
-      font-size: 8px;
-      line-height: 12px; }
-    .footer__contacts-phone {
-      font-size: 14px; }
-    .footer__contacts-time {
-      margin-top: 2px; }
-    .footer__privacy {
-      font-size: 10px;
-      line-height: 16px; }
-    .footer__politic {
-      font-size: 9px; } }
-@media screen and (max-width: 500px) {
-  .footer {
-    background-size: 700px 100%; }
-    .footer__address {
-      font-size: 14px;
-      line-height: 18px;
-      align-items: flex-start; }
-      .footer__address svg {
-        margin-top: 3px; }
-      .footer__address br {
-        display: unset; }
-    .footer__instagram {
-      margin-top: -8px; }
+    .footer__whatsapp i {
+      display: none; } }
+@media screen and (max-width: 992px) {
+  .footer__col {
+    display: none;
+    position: static; }
     .footer__col:nth-child(1) {
-      width: 230px; }
-    .footer__ooo {
-      width: 230px; }
-    .footer__contacts-time {
-      margin-left: -15px; } }
+      display: block;
+      width: 100%; }
+  .footer__head {
+    display: flex;
+    padding-right: 0; }
+  .footer__logo {
+    margin-right: 40px;
+    margin-bottom: 0; }
+  .footer__info {
+    margin-top: 0; }
+  .footer__address, .footer__mail, .footer__phone {
+    font-size: 12px; }
+    .footer__address i, .footer__mail i, .footer__phone i {
+      margin-right: 10px; }
+  .footer__phone {
+    font-size: 14px; }
+  .footer__phones {
+    padding-right: 80px; }
+  .footer__whatsapp {
+    margin-top: 9px;
+    display: block;
+    margin-left: 23px; }
+    .footer__whatsapp strong {
+      font-size: 14px; }
+    .footer__whatsapp span {
+      display: block;
+      margin-top: 6px;
+      font-size: 10px; }
+  .footer__socials {
+    bottom: 15px;
+    top: unset;
+    display: flex;
+    align-items: center; }
+    .footer__socials-item {
+      margin-left: 3px;
+      margin-bottom: 0;
+      width: 37px;
+      height: 37px; }
+      .footer__socials-item svg {
+        height: 15px;
+        width: auto; }
+  .footer__privacy {
+    font-size: 8px;
+    margin-top: 10px; }
+  .footer__by {
+    font-size: 7px;
+    margin-top: 6px; }
+
+  .footer-top {
+    padding: 15px 0 27px; }
+    .footer-top:after {
+      height: 9px;
+      width: 990px; }
+    .footer-top__inner {
+      position: relative; }
+
+  .footer-bottom {
+    padding: 13px 0; }
+    .footer-bottom__inner {
+      flex-wrap: wrap; }
+    .footer-bottom__info {
+      order: -1;
+      display: block; }
+    .footer-bottom__link {
+      font-size: 10px;
+      line-height: 16px;
+      margin-right: 0 !important; } }
+@media screen and (max-width: 768px) {
+  .footer__logo {
+    width: 150px;
+    margin-right: 0; }
+  .footer__langs {
+    margin-left: auto; }
+  .footer__lang {
+    width: 32px;
+    height: 32px; }
+    .footer__lang:not(:last-child) {
+      margin-right: 3px; }
+    .footer__lang img {
+      width: 14px; } }
 
 /*# sourceMappingURL=footer.css.map */
